@@ -1,0 +1,11 @@
+# Binary files
+*.xlsx
+*.docx
+*.pdf
+
+# Diagram files
+*.drawio
+*.drawio.bkp
+
+# Text files (note)
+business-rule.txt
