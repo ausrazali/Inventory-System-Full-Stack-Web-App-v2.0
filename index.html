@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <title>Echelon Inventory System Staff Login</title>
+    </head>
+
+    <body>
+        <div class="page-grid">
+            <div class="left">
+                <h1 class="white-font">Echel<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5z"><animateTransform attributeName="transform" attributeType="XML" dur="10s" from="0 12 12" repeatCount="indefinite" to="360 12 12" type="rotate"/></path></svg></span>n</h1>
+                <p class="white-font system-name">Inventory System</p>
+            </div>
+            <div class="right">
+                    <form action="#" method="post" class="form-grid">
+                        <h2>Staff Login</h2>
+                        <input type="text" name="sid" id="sid" placeholder="SID" class="form form-input" autofocus>
+                        <input type="password" name="pw" id="pw" placeholder="Password" class="form form-input">
+                        <input type="submit" value="Login" class="form form-button white-font">
+                        <a href="#" class="hyperlink">Forgot password</a>
+                        <p class="hyperlink need-access" id="need-access">Need access?</p>
+                    </form>
+                    <div class="access-popup" id="access-popup">
+                        <p>
+                            The IT department team will reach out to you via phone to confirm this request.
+                            <br><br>
+                            During the call, they will need to validate your personal information for verification purposes.
+                            <br><br>
+                            Upon successful verification, they will provide a specific URL for you to register your credentials and log into the inventory system.
+                            <br><br>
+                            Should you require any further assistance, the IT team is ready to help.
+                        </p>
+                        <button class="popup-close" id="popup-close">OK</button>
+                    </div>
+            </div>
+        </div>
+
+        <script src="assets/script/popup.js"></script>
+    </body>
+</html>
