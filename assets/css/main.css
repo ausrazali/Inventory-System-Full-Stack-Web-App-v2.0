@@ -65,7 +65,6 @@
         border-radius: 1rem;
         overflow: hidden;
         place-content: center;
-        margin: 0 10vw 0 5vw;
     }
 
     form{
@@ -91,10 +90,6 @@
 
     .first > p{
         font-weight: 700;
-    }
-
-    .second{
-
     }
 
     .form-input{
