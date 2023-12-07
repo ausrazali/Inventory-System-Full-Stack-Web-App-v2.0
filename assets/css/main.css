@@ -140,4 +140,45 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    .need-access-message-320px{
+        display: none;
+        grid-template-rows: 62.5vw 17.5vw;
+        place-items: center;
+        padding: 0 10vw;
+        border-radius: 1rem;
+        position: fixed;
+        background-color: #FFFFFF;
+        font-size: 0.625rem;
+        text-align: center;
+        margin: 45.625vw 10vw;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .need-access-message-320px-button-container{
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+    }
+
+    .need-access-message-320px-button{
+        width: 25vw;
+        height: 10vw;
+        border-radius: 10vw;
+        justify-items: space-between;
+        background-repeat: #D9D9D9;
+    }
+
+    .need-access-message-320px-button > a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .need-access-message-320px-button.proceed{
+        background-color: #0573E4;
+    }
 }
