@@ -17,7 +17,7 @@
 
     <body>
         <div class="body-grid mobile-s320">
-            <div class="top-grid">
+            <div class="top-grid" id="top-grid">
                 <div></div>
                 <div></div>
                 <div>
@@ -27,8 +27,22 @@
                     <p>Inventory System</p>
                 </div>
             </div>
+
+            <div class="need-access-message-320px">
+                <div>
+                    <p>On <strong>PROCEED</strong>, the IT department team will reach out to you via phone to confirm this request.<br><br>
+                    During the call, they will need to validate your personal information for verification purposes.<br><br>
+                    Upon successful verification, they will provide a specific URL for you to register your credentials and log into the inventory system.<br><br>
+                    Should you require any further assistance, the IT team is ready to help.</p>
+                </div>
+
+                <div class="need-access-message-320px-button-container">
+                    <button class="need-access-message-320px-button" id="need-access-message-320px-button-close">Close</button>
+                    <button class="need-access-message-320px-button proceed"><a href="#">Proceed</a></button>
+                </div>
+            </div>         
             
-            <div class="middle-grid">
+            <div class="middle-grid" id="middle-grid">
                 <div>
                     <form action="#">
                         <div class="form-div first">
@@ -47,11 +61,11 @@
                 </div>
                 <div class="middle-grid-bottom">
                     <a href="#">Forgot password</a>
-                    <p>Need access?</p>
+                    <p id="need-access-320px-clicker">Need access?</p>
                 </div>
             </div>
 
-            <div class="bottom-grid">
+            <div class="bottom-grid" id="bottom-grid">
                 <div class="bottom-grid-top">
                     <p>Created by: <span class="my-name">Firdaus Razali</span></p>
                 </div>
