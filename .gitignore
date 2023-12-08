@@ -10,4 +10,11 @@
 # Text files (note)
 business-rule.txt
 
+# OTher code file
+.cpp
+
+# Executable file
+.exe
+
+# Specific filename
 indexORIbkp.html
