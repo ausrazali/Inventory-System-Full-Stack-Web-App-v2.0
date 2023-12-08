@@ -7,7 +7,7 @@
     border: 0;
     font-family: "Roboto", serif;
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 360px) {
     .mobile-s320{
         display: initial;
     }
