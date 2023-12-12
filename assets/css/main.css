@@ -1,184 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Initialize CSS */
 *, *:before, *:after {
     box-sizing: border-box;
-    margin: 0;
-    border: 0;
-    font-family: "Roboto", serif;
 }
-@media screen and (max-width: 360px) {
-    .mobile-s320{
-        display: initial;
-    }
 
-    body{
-        background: linear-gradient(#0574E5, #02107B);
-        min-height: 100vh;
-        min-width: 100vw;
-    }
+* {
+    font-family: "Roboto", serif;
+    margin: 0;
+}
 
-    .body-grid{
-        display: grid;
-        grid-template-rows: 45.625vw 80vw 45.625vw;
-        min-height: 100vh;
-        max-width: 100vw;
-        place-items: center;
-    }
+body{
+    background: linear-gradient(#0574E5, #00114D);
+}
 
-    .top-grid{
-        display: grid;
-        grid-template-rows: 9.0625vw 9.0625vw 18.125vw 9.0625vw;
-        min-width: 100vw;
-        min-height: 100%;
-        place-items: center;
-    }
+.credit{
+    display: grid;
+    grid-template-rows: 7vh 7vh;
+    justify-items: center;
+    align-items: start;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 5vw;
+    color: #FFF;
+}
 
-    h1 > span > svg{
-        width: 1.375rem;
-        height: 1.375rem;
-        animation: rotate 5s linear infinite;
-        fill: #FFFFFF;
-    }
+.credit > div > a > svg{
+    width: 7.5vw;
+    height: 7.5vw;
+    fill: #FFF;
+    margin: 0 5vw;
+}
 
-    @keyframes rotate {
-        from {transform: rotate(0);}
-        to {transform: rotate(360deg);}
-    }
+.body-container{
+    display: grid;
+    grid-template-rows: 25vh 75vh;
+    width: 100vw;
+}
 
+.system-name{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    justify-items: center;
+    color: #FFF;
+}
+
+.system-name-first{
+    align-self: end;
+}
+
+.system-name-last{
+    align-self: start;
+    font-size: 6.5625vw;
+}
+
+h1{
+    font-size: 13.4375vw;
+    font-weight: 700;
+}
+
+h1 > span > svg{
+    width: 7.5vw;
+    height: 7.5vw;
+    fill: #FFF;
+}
+
+.body-container-last{
+    display: grid;
+    justify-content: center;
+}
+
+.form-container{
+    display: grid;
+    justify-content: center;
+    background-color: #FFF;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 10vw;
+}
+
+form{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    place-items: center;
+}
+
+h2{
+    font-size: 7.5vw;
+    font-weight: 700;
+}
+
+input{
+    width: 60vw;
+    height: 5vh;
+    padding-left: 5vw;
+    border: 1px solid #D5D5D5;
+    border-radius: 5vw;
+    font-size: 5vw;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]{
+    padding: 0;
+    border: none;
+    background-color: #0574E5;
+    color: #FFF;
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .credit{
+        grid-template-rows: 5vh 5vh;
+        font-size: 1.5625vw;
+    }
+    
+    .credit > div > a > svg{
+        width: 1.5625vw;
+        height: 1.5625vw;
+        margin: 0 1.5625vw;
+    }
+    
+    .body-container{
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 100vh;
+    }
+    
+    .system-name{
+        grid-template-rows: 50% 50%;
+    }
+    
+    .system-name-last{
+        font-size: 3.125vw;
+    }
+    
     h1{
-        font-size: 2.5rem;
+        font-size: 6.25vw;
         font-weight: 700;
-        color: #FFFFFF;
     }
-
-    .top-grid > div > p{
-        color: #FFFFFF;
+    
+    h1 > span > svg{
+        width: 3.3203125vw;
+        height: 3.3203125vw;
+        fill: #FFF;
     }
-
-    .middle-grid{
-        display: grid;
-        grid-template-rows: 75vw 5vw;
-        min-width: 80vw;
-        min-height: 100%;
-        background-color: #FFFFFF;
-        border-radius: 1rem;
-        overflow: hidden;
+    
+    .body-container-last{
         place-content: center;
     }
-
-    form{
-        display: grid;
-        grid-template-rows: 20vw 20vw 20vw 15vw;
-        place-items: center;
+    
+    .form-container{
+        width: 35vw;
+        height: 39.0625vh;
+        border-radius: 5vw;
     }
-
-    .form-div{
-        display: grid;
-        place-items: center;
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    .icon{
-        height: 2rem;
-        width: 2rem;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0.5rem;
-    }
-
-    .first > p{
+    
+    h2{
+        font-size: 3.125vw;
         font-weight: 700;
     }
-
-    .form-input{
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        width: 60vw;
-        height: 10vw;
-        border-radius: 10vw;
-        padding-left: 0.875rem;
-    }
-
-    ::placeholder{
-        color: rgba(0, 0, 0, 0.1);
-    }
-
-    .form-button{
-        border: none;
-        background-color: #0573E4;
-        color: #FFFFFF;
-        width: 60vw;
-        height: 10vw;
-        border-radius: 10vw;
-    }
-
-    .middle-grid-bottom{
-        display: flex;
-        font-size: 0.75rem;
-        justify-content: space-around;
-    }
-
-    .bottom-grid{
-        display: grid;
-        grid-template-rows: 22.8125vw 22.8125vw;
-        min-width: 100%;
-        min-height: 100%;
-        font-size: 0.75rem;
-        color: #FFFFFF;
-    }
-
-    .bottom-grid-top{
-        place-self: center;
-    }
-
-    .my-name{
-        font-weight: 700;
-    }
-
-    .profile-page{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .need-access-message-320px{
-        display: none;
-        grid-template-rows: 62.5vw 17.5vw;
-        place-items: center;
-        padding: 0 10vw;
-        border-radius: 1rem;
-        position: fixed;
-        background-color: #FFFFFF;
-        font-size: 0.625rem;
-        text-align: center;
-        margin: 45.625vw 10vw;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-    }
-
-    .need-access-message-320px-button-container{
-        display: flex;
-        justify-content: space-between;
-        width: 60vw;
-    }
-
-    .need-access-message-320px-button{
-        width: 25vw;
-        height: 10vw;
-        border-radius: 10vw;
-        justify-items: space-between;
-        background-repeat: #D9D9D9;
-    }
-
-    .need-access-message-320px-button > a{
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    .need-access-message-320px-button.proceed{
-        background-color: #0573E4;
+    
+    input{
+        width: 18.75vw;
+        height: 5.3vh;
+        padding-left: 1.953125vw;
+        border-radius: 1.5625vw;
+        font-size: 1.953125vw;
     }
 }
